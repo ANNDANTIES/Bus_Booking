@@ -9,7 +9,7 @@
   <!-- Add Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <!-- Link to your custom CSS file -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body ng-controller="MainController" class="container mt-5">
   <div class="jumbotron text-center">
@@ -39,7 +39,7 @@
         <label for="journeyDate">Date of Journey:</label>
         <input type="date" id="journeyDate" ng-model="journeyDate" class="form-control">
       </div>
-      <button ng-click="submit()" class="btn btn-primary">Submit</button>
+      <button ng-click="redirectToBusListing()" class="btn btn-primary">Submit</button>
     </div>
   </div>
   
