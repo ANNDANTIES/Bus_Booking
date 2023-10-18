@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Atravels">
+<head>
+  <meta charset="utf-8">
+  <title>Atravels</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Add Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- Link to your custom CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="MainController" class="container mt-5">
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Atravels</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="from">From:</label>
+        <select id="from" ng-model="from" class="form-control">
+          <option value="New York">New York</option>
+          <option value="Los Angeles">Los Angeles</option>
+          <option value="Chicago">Chicago</option>
+          <!-- Add more places as needed -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="to">To:</label>
+        <select id="to" ng-model="to" class="form-control">
+          <option value="San Francisco">San Francisco</option>
+          <option value="Miami">Miami</option>
+          <option value="Seattle">Seattle</option>
+          <!-- Add more places as needed -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="journeyDate">Date of Journey:</label>
+        <input type="date" id="journeyDate" ng-model="journeyDate" class="form-control">
+      </div>
+      <button ng-click="submit()" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+  
+  <!-- Add Bootstrap JavaScript (for Bootstrap features like modals, etc.) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+<app-root></app-root>
+
+</html>

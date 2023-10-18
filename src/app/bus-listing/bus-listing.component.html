@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Available Buses</h2>
+    <p>Date: {{ journeyDate }}</p>
+    <p>From: {{ from }}</p>
+    <p>To: {{ to }}</p>
+  
+    <div class="card" *ngFor="let bus of availableBuses">
+      <div class="card-body">
+        <h5 class="card-title">{{ bus.name }}</h5>
+        <p class="card-text">Departure Time: {{ bus.departureTime }}</p>
+        <p class="card-text">Price: {{ bus.price }}</p>
+        <!-- Add more bus details as needed -->
+      </div>
+    </div>
+  </div>
+  
