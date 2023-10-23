@@ -17,15 +17,13 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     // Additional initialization logic can go here
   }
+  redirectToBusListing() {
+    const queryParams = {
+      from: this.from,
+      to: this.to,
+      journeyDate: this.journeyDate
+    };
+    this.router.navigate(['/bus-listing'], { queryParams: queryParams });
+  }
 
-  // submit() {
-  //   // Assuming you've collected 'from', 'to', and 'journeyDate' from the form
-  //   this.router.navigate(['/bus-listing'], {
-  //     queryParams: {
-  //       from: this.from,
-  //       to: this.to,
-  //       date: this.journeyDate
-  //     }
-  //   });
-  // }
 }
